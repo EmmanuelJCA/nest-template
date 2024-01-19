@@ -2,10 +2,10 @@ import { Module } from '@nestjs/common';
 import { TypeOrmModule } from '@nestjs/typeorm';
 
 import { CreateSettingsHandler } from './commands/create-settings.command';
-import { UserController } from './user.controller';
 import { UserEntity } from './entities/user.entity';
-import { UserService } from './user.service';
 import { UserSettingsEntity } from './entities/user-settings.entity';
+import { UserController } from './user.controller';
+import { UserService } from './user.service';
 
 const handlers = [CreateSettingsHandler];
 
